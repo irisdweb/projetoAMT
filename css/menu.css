@@ -1,16 +1,11 @@
-#boxPrincipal{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    height: 90vh;
-}
 #subtituloMenu{
     width: 100vw;
     text-align: center;
     margin: 0 0 10vh 0;
+}
+#boxPrincipal{
+    flex-direction: row;
+    align-content: center
 }
 .boxNiveis{
     display: flex;
@@ -30,12 +25,12 @@
     line-height: 24px;
     text-align: center;
 
-    width: 250px;
-    height: 150px;
+    width: 320px;
+    height: 180px;
     background-color: transparent;
 
     color: #000000;
-    margin: 10px 20px 10px 20px;
+    margin: 0 20px 0 20px;
 
     cursor: pointer;
 }

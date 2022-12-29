@@ -7,13 +7,26 @@ body{
 
 #barraNavegacao {
     padding: 0 20px 0 20px;
-    height: 10vh;
+    height: 8vh;
 
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+#barraNavegacao > div:first-child{
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
+#barraNavegacao > div:first-child > h3{
+    margin: 0;
+}
 
+#barraNavegacao > div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 .botao{
     box-sizing: border-box;
     border: 1px solid #000000;
@@ -33,21 +46,33 @@ body{
     color: #000000;
     cursor: pointer;
 }
-
 #botaoInstrucoes{
 
 }
 #botaoSom, #botaoSair {
-    margin-left: 20px;
+    margin-left: 25px;
     height: 20px;
     width: auto;
     cursor: pointer;
 }
 
+#boxPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    height: 92vh;
+}
+#subtituloNivel{
+
+}
+
 h1{
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 600; /*Semi Bold*/
     font-size: 70px;
     line-height: 85px;
     text-align: center;
@@ -57,16 +82,25 @@ h1{
 h2{
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 700; /*Bold*/
     font-size: 40px;
     line-height: 48px;
+
+    color: #000000;
+}
+h3{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600; /*Semi Bold*/
+    font-size: 25px;
+    line-height: 36px;
 
     color: #000000;
 }
 p{
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400; /*Regular*/
     font-size: 15px;
     line-height: 24px;
     text-align: center;
