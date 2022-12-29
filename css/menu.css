@@ -1,0 +1,49 @@
+#boxPrincipal{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    height: 90vh;
+}
+#subtituloMenu{
+    width: 100vw;
+    text-align: center;
+    margin: 0 0 10vh 0;
+}
+.boxNiveis{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 20px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+
+    width: 250px;
+    height: 150px;
+    background-color: transparent;
+
+    color: #000000;
+    margin: 10px 20px 10px 20px;
+
+    cursor: pointer;
+}
+.boxNiveis > h3:first-child{
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+.boxNiveis > h3:last-child{
+    margin: 10px 0 0 0;
+    font-weight: 500;
+}

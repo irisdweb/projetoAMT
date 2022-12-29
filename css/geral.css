@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#barraNavegacao {
+    padding: 0 20px 0 20px;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.botao{
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 20px;
+
+    width: 160px;
+    height: 30px;
+    background-color: transparent;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
+    cursor: pointer;
+}
+
+#botaoInstrucoes{
+
+}
+#botaoSom, #botaoSair {
+    margin-left: 20px;
+    height: 20px;
+    width: auto;
+    cursor: pointer;
+}
+
+h1{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 85px;
+    text-align: center;
+
+    color: #000000;
+}
+h2{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #000000;
+}
+p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
+}
