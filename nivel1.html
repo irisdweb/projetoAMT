@@ -4,22 +4,32 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+
     <title>Title</title>
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/nivel1.css">
 </head>
 <body>
-<section id="barraNavegacao">
+<header id="barraNavegacao">
     <div><h3 id="subtituloNivel">Nível 1 - Conhecer a Cor</h3></div>
     <div>
     <button id="botaoInstrucoes" class="botao">Instruções</button>
     <img id="botaoSom" src="img/BotaoSomOn.png" height="130" width="159" alt="">
     <img id="botaoSair" src="img/BotaoSair.png" height="120" width="129" alt="">
     </div>
-</section>
-<section id="boxPrincipal">
+</header>
+<main id="boxPrincipal">
 <h2>Seleciona a Cor: Vermelho</h2>
-
-</section>
+    <script src="js/nivel1.js"></script>
+</main>
+<footer id="barraPontuação">
+    <div>
+    <p>Pontuação Nível 1: 0 de 15 pontos</p>
+    <p>Pontuação Final: 0 pontos</p>
+    </div>
+</footer>
 </body>
 </html>
