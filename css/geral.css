@@ -246,6 +246,14 @@ body {
 #barraPontuação > div:first-child > p{
     margin: 0 0 0 25px;
 }
+.ponto{
+    height: 10px;
+    width: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    border: 5px #D9D9D9 solid;
+}
 
 /*TAMANHOS DE LETRAS------------------------------*/
 h1 {
