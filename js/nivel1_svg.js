@@ -1,3 +1,15 @@
+var pontuacao = 0;
+console.log("pontuação: "+pontuacao);
+
+var resultadoCliqueNivel1 = [];
+for(var i = 1; i<16; i++){
+    resultadoCliqueNivel1 [i] = "ponto"+i;
+}
+console.log(resultadoCliqueNivel1);
+
+var numeroClique = 0;
+var circuloPontuacao;
+
 var stringCorTextoNivel1 = ["Vermelho", "Azul", "Amarelo", "Verde", "Violeta",
     "Laranja", "Amarelo-Laranja", "Vermelho-Laranja", "Vermelho-Violeta",
     "Azul-Violeta", "Azul-Verde", "Amarelo-Verde", "Preto", "Branco", "Cinza"];
@@ -100,14 +112,25 @@ function quadradoClicado(quadrado) {
     console.log("cliquei no:" + quadrado.id);
     console.log("a cor é:" + corTextoNivel1);
 
+    numeroClique = numeroClique + 1;
+    circuloPontuacao = document.getElementById("ponto"+[numeroClique]);
+    console.log(circuloPontuacao);
+
     if ("quadrado" + corTextoNivel1 == quadrado.id) {
         quadradoCerto(quadrado);
+        circuloPontuacao.style.border = "5px #9EFF00 solid";
     } else {
         quadradoErrado(quadrado);
+        circuloPontuacao.style.border = "5px #FF0000 solid";
     }
+    console.log("pontuação: " + pontuacao);
+    document.getElementById("pontuacaoNivel1").innerHTML = "Pontuação Nível 1: <b>" + pontuacao + " </b>de 15 pontos";
+    console.log(numeroClique);
 }
 
 function quadradoCerto(quadrado) {
+    pontuacao = pontuacao + 1;
+
     quadrado.style.strokeWidth = "10";
     quadrado.style.stroke = "#9EFF00";
 
@@ -138,6 +161,8 @@ function quadradoCerto(quadrado) {
 }
 
 function quadradoErrado(quadrado) {
+    console.log(circuloPontuacao);
+
     quadrado.style.strokeWidth = "10";
     quadrado.style.stroke = "#FF0000";
     setTimeout(() => {
@@ -158,7 +183,7 @@ function quadradoErrado(quadrado) {
     if (stringCorTextoNivel1.length == 0) {
         setTimeout(() => {
             window.location = "nivel2.html";
-        }, 1000);
+        }, 5000);
     }
 }
 
