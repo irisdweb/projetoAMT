@@ -37,6 +37,7 @@ main > h2{
 }
 #divCoresNeutrasNivel3 > svg, #divCoresPrimariasNivel3 > svg, #divCoresSecundariasNivel3 > svg, #divCoresTerciariasNivel3 > svg{
     margin: 10px 0;
+    cursor: pointer;
 }
 
 #divCoresTerciariasNivel3 > section{
@@ -49,6 +50,7 @@ main > h2{
 }
 #divCoresTerciariasNivel3 > section > section > svg{
     margin: 10px 10px 10px 0;
+    cursor: pointer;
 }
 #divCoresTerciariasNivel3 > section > section:last-child > svg{
     margin-right: 0;
