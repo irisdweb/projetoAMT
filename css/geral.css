@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
@@ -13,21 +13,25 @@ body{
     align-items: flex-end;
     justify-content: space-between;
 }
-#barraNavegacao > div:first-child{
+
+#barraNavegacao > div:first-child {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-#barraNavegacao > div:first-child > h3{
+
+#barraNavegacao > div:first-child > h3 {
     margin: 0;
 }
 
-#barraNavegacao > div:last-child{
+#barraNavegacao > div:last-child {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    height: 30px;
 }
-.botao{
+
+.botao {
     box-sizing: border-box;
     border: 1px solid #000000;
     border-radius: 20px;
@@ -46,9 +50,16 @@ body{
     color: #000000;
     cursor: pointer;
 }
-#botaoInstrucoes{
+
+.botao:hover {
+    background-color: black;
+    color: white;
+}
+
+#botaoInstrucoes {
 
 }
+
 #botaoSom, #botaoSair {
     margin-left: 25px;
     height: 20px;
@@ -56,7 +67,7 @@ body{
     cursor: pointer;
 }
 
-#boxPrincipal{
+#boxPrincipal {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,11 +76,163 @@ body{
 
     height: 92vh;
 }
-#subtituloNivel{
+
+/*POP UP CONFIRMAÇÃO SAIR------------------------------*/
+.popConfirmacaoSairOff {
+    display: none;
+}
+
+.popConfirmacaoSairOn {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popConfirmacaoSair > div {
+    width: 70vw;
+    height: 70vh;
+    background-color: white;
+    border: 1px solid black;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#popConfirmacaoSair > div > p, #popConfirmacaoSair > div > section {
+    margin: 0;
+    padding: 10px;
+}
+
+#popConfirmacaoSair > div > section > button {
+    width: 80px;
+    margin: 0 10px;
+}
+
+/*-------------------------------------------*/
+
+/*POP UP INSTRUÇÕES------------------------------*/
+.popInstrucoesNivel1Off {
+    display: none;
+}
+
+.popInstrucoesNivel1On {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popInstrucoesNivel1 > div {
+    width: 70vw;
+    height: 70vh;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#popInstrucoesNivel1 > div > section > img {
+    width: 30px;
+    height: auto;
+    padding: 40px;
+}
+
+#botaoSairInstrucoes {
+    cursor: pointer;
+}
+
+#popInstrucoesNivel1 > div > section:first-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#popInstrucoesNivel1 > div > section:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+}
+
+#tituloInstrucoes {
 
 }
 
-h1{
+#textoInstrucoes {
+    width: 50%;
+    height: auto;
+}
+
+/*-------------------------------------------*/
+
+/*POP UP MENSAGEM------------------------------*/
+.popMensagemOff {
+    display: none;
+}
+
+.popMensagemOn {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popMensagem > div {
+    width: 70vw;
+    height: 70vh;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#popMensagem > div > section > img {
+    width: 30px;
+    height: auto;
+    padding: 40px;
+}
+
+#botaoSairMensagem {
+    cursor: pointer;
+}
+
+#popMensagem > div > section:first-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#popMensagem > div > section:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+}
+
+#textoMensagem {
+    width: 50%;
+    height: auto;
+}
+
+/*-------------------------------------------*/
+
+h1 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600; /*Semi Bold*/
@@ -79,25 +242,28 @@ h1{
 
     color: #000000;
 }
-h2{
+
+h2 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 700; /*Bold*/
+    font-weight: 400; /*Bold*/
     font-size: 40px;
     line-height: 48px;
 
     color: #000000;
 }
-h3{
+
+h3 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 600; /*Semi Bold*/
+    font-weight: 500; /*Semi Bold*/
     font-size: 25px;
     line-height: 36px;
 
     color: #000000;
 }
-p{
+
+p {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400; /*Regular*/

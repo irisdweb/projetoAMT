@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Title</title>
+    <title>Composição das Cores</title>
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -12,13 +12,14 @@
 <header id="barraNavegacao">
     <div></div>
     <div>
-        <button id="botaoInstrucoes" class="botao">Instruções</button>
         <img id="botaoSom" src="img/BotaoSomOn.png" height="130" width="159" alt="">
-        <img id="botaoSair" src="img/BotaoSair.png" height="120" width="129" alt="">
+        <audio id="audio" loop>
+            <source src="music/Ice_Fire_King_Canyon.mp3" type="audio/mpeg">
+        </audio>
     </div>
 </header>
 <main id="boxPrincipal">
-    <h1 id="tituloJogo">Isto é um jogo educativo</h1>
+    <h1 id="tituloJogo">Composição das Cores</h1>
     <button id="botaoMenu" class="botao">Menu</button>
 </main>
 
@@ -27,5 +28,6 @@
         window.location = "menu.html";
     };
 </script>
+<script src="js/geral.js"></script>
 </body>
 </html>

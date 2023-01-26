@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Composição das Cores | Menu</title>
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/menu.css">
 </head>
@@ -13,12 +13,21 @@
 <header id="barraNavegacao">
     <div></div>
     <div>
-        <button id="botaoInstrucoes" class="botao">Instruções</button>
         <img id="botaoSom" src="img/BotaoSomOn.png" height="130" width="159" alt="">
         <img id="botaoSair" src="img/BotaoSair.png" height="120" width="129" alt="">
     </div>
 </header>
 <main id="boxPrincipal">
+    <section id="popConfirmacaoSair" class="popConfirmacaoSairOff">
+        <div id="divConteudoConfirmacaoSair">
+            <p>Tem a certeza de que quer sair do jogo?</p>
+            <section>
+                <button id="botaoSairJogo" class="botao">Sim</button>
+                <button id="botaoSairPopConfirmacaoSair" class="botao">Não</button>
+            </section>
+
+        </div>
+    </section>
     <h2 id="subtituloMenu">Menu</h2>
     <div id="boxNivel1" class="boxNiveis">
         <h3>Nivel 1</h3>
@@ -45,5 +54,6 @@
         window.location = "nivel3.html";
     };
 </script>
+<script src="js/geral.js"></script>
 </body>
 </html>

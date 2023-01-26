@@ -1,10 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+
+    <title>Composição das Cores | Nível 3</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/nivel1.css">
 </head>
 <body>
+<header id="barraNavegacao">
+    <div><h3 id="subtituloNivel"><b>Nível 3</b> - Misturar as cores</h3></div>
+    <div>
+        <button id="botaoInstrucoes" class="botao">Instruções</button>
+        <img id="botaoSom" src="img/BotaoSomOn.png" height="130" width="159" alt="">
+        <img id="botaoSair" src="img/BotaoSair.png" height="120" width="129" alt="">
+    </div>
+</header>
+<main id="boxPrincipal">
+    <section id="popConfirmacaoSair" class="popConfirmacaoSairOff">
+        <div id="divConteudoConfirmacaoSair">
+            <p>Tem a certeza de que quer sair do jogo?</p>
+            <section>
+                <button id="botaoSairJogo" class="botao">Sim</button>
+                <button id="botaoSairPopConfirmacaoSair" class="botao">Não</button>
+            </section>
 
+        </div>
+    </section>
+    <section id="popInstrucoesNivel1" class="popInstrucoesNivel1Off">
+        <div id="divConteudoInstrucoesNivel1">
+            <section>
+                <img id="botaoSairInstrucoes" src="img/cruzFechar.png" height="120" width="120" alt="cruz para fechar o pop up das instruções">
+            </section>
+            <section>
+                <h3 id="tituloInstrucoes"><b>Instruções</b></h3>
+                <p id="textoInstrucoes">POR ESCREVER</p>
+            </section>
+        </div>
+    </section>
+    <h2>Mistura as cores até chegares à pedida!</h2>
+    <script src="js/nivel3.js"></script>
+</main>
+<footer id="barraPontuação">
+    <div>
+        <p>Pontuação Nível 1: 0 de 15 pontos</p>
+        <p>Pontuação Final: 0 pontos</p>
+    </div>
+</footer>
+<script type="text/javascript">
+    document.getElementById("botaoInstrucoes").onclick = function () {
+        document.getElementById("popInstrucoesNivel1").classList.add('popInstrucoesNivel1On');
+    };
+    document.getElementById("botaoSairInstrucoes").onclick = function () {
+        document.getElementById("popInstrucoesNivel1").classList.remove('popInstrucoesNivel1On');
+    };
+</script>
+<script src="js/geral.js"></script>
 </body>
-</html>
