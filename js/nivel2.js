@@ -10,11 +10,158 @@ tituloCores.addEventListener("dblclick", function() {
         //console.log("3ª vez:" + tituloCores.innerHTML);
 });
 
+var contadorCliquesPrimaria = 0;
+function clicarCor (cor){
+        for (let i=0; i<cor.length; i++) {
+                cor[i].addEventListener("click", function () {
+                        console.log("Click no " + cor);
+                        console.log(tituloCores.innerHTML);
+                        console.log(cor[0]);
+                        console.log(cor[0].style.fill);
 
+                        contadorCliquesPrimaria = contadorCliquesPrimaria + 1;
+                        console.log(contadorCliquesPrimaria);
+                        if(tituloCores.innerHTML == "3 cores primárias!") {
+                                if (cor[0].style.fill == "rgb(242, 229, 76)" ||
+                                    cor[0].style.fill == "rgb(210, 58, 47)" ||
+                                    cor[0].style.fill == "rgb(58, 112, 173)") {
+                                        cor[0].style.stroke = "#9EFF00";
+                                        cor[0].style.strokeWidth = "5";
+                                } else {
+                                        cor[0].style.stroke = "#FF0000";
+                                        cor[0].style.strokeWidth = "5";
+                                }
+                        }
+                        if(tituloCores.innerHTML == "3 cores secundárias!") {
+                                if (cor[0].style.fill == "rgb(229, 149, 53)" ||
+                                    cor[0].style.fill == "rgb(102, 60, 133)" ||
+                                    cor[0].style.fill == "rgb(62, 140, 95)") {
+                                        cor[0].style.stroke = "#9EFF00";
+                                        cor[0].style.strokeWidth = "5";
+                                } else {
+                                        cor[0].style.stroke = "#FF0000";
+                                        cor[0].style.strokeWidth = "5";
+                                }
+                        }
+                        if(tituloCores.innerHTML == "6 cores terciárias!") {
+                                if (cor[0].style.fill == "rgb(245, 199, 70)" ||
+                                    cor[0].style.fill == "rgb(219, 106, 53)" ||
+                                    cor[0].style.fill == "rgb(180, 39, 122)" ||
+                                    cor[0].style.fill == "rgb(69, 79, 148)" ||
+                                    cor[0].style.fill == "rgb(65, 148, 183)" ||
+                                    cor[0].style.fill == "rgb(150, 186, 68)") {
+                                        cor[0].style.stroke = "#9EFF00";
+                                        cor[0].style.strokeWidth = "5";
+                                } else {
+                                        cor[0].style.stroke = "#FF0000";
+                                        cor[0].style.strokeWidth = "5";
+                                }
+                        }
+                        if(contadorCliquesPrimaria > 2){
+                                console.log("já clicou 3 vezes");
+                                // contadorCliquesPrimaria=0;
+                        }
+                });
+        }
+}
 
+/*var contadorCliquesSecundaria = 0;
+function clicarCorSecundaria (cor){
+        for (let i=0; i<cor.length; i++) {
+                cor[i].addEventListener("click", function () {
+                        console.log("Click no " + cor);
+                        console.log(tituloCores.innerHTML);
+                        console.log(cor[0]);
+                        console.log(cor[0].style.fill);
+
+                        contadorCliquesSecundaria = contadorCliquesSecundaria + 1;
+                        console.log(contadorCliquesSecundaria);
+                        if(tituloCores.innerHTML == "3 cores secundárias!") {
+                                console.log("está bem")
+                                if (cor[0].style.fill == "rgb(229, 149, 53)" || cor[0].style.fill == "rgb(102, 60, 133)" || cor[0].style.fill == "rgb(62, 140, 95)") {
+                                        cor[0].style.stroke = "#9EFF00";
+                                        cor[0].style.strokeWidth = "5";
+                                } else {
+                                        cor[0].style.stroke = "#FF0000";
+                                        cor[0].style.strokeWidth = "5";
+                                }
+                        }
+                        if(contadorCliquesSecundaria > 2){
+                                console.log("já clicou 3 vezes");
+                                // contadorCliquesPrimaria=0;
+                        }
+                });
+        }
+}*/
 
 
 // Arc Amarelo
+var arcAmarelo = document.getElementsByClassName("arcAmarelo");
+clicarCor(arcAmarelo);
+
+
+ /*       for (let i=0; i<arcAmarelo.length; i++) {
+                arcAmarelo[i].addEventListener("click", function () {
+                        console.log("Click no " + arcAmarelo);
+                        console.log(tituloCores.innerHTML);
+                        console.log(arcAmarelo[0]);
+                        if (tituloCores.innerHTML == "3 cores primárias!") {
+                                arcAmarelo[0].style.stroke = "#9EFF00";
+                                arcAmarelo[0].style.strokeWidth = "5";
+                        }
+                });
+        }*/
+
+
+// Arc AmareloLaranja
+var arcAmareloLaranja = document.getElementsByClassName("arcAmareloLaranja");
+clicarCor(arcAmareloLaranja);
+
+// Arc Laranja
+var arcLaranja = document.getElementsByClassName("arcLaranja");
+clicarCor(arcLaranja);
+
+// Arc VermelhoLaranja
+var arcVermelhoLaranja = document.getElementsByClassName("arcVermelhoLaranja");
+clicarCor(arcVermelhoLaranja);
+
+// Arc Vermelho
+var arcVermelho = document.getElementsByClassName("arcVermelho");
+clicarCor(arcVermelho);
+
+// Arc VioletaVermelho
+var arcVioletaVermelho = document.getElementsByClassName("arcVioletaVermelho");
+clicarCor(arcVioletaVermelho);
+
+// Arc Violeta
+var arcVioleta = document.getElementsByClassName("arcVioleta");
+clicarCor(arcVioleta);
+
+// Arc AzulVioleta
+var arcAzulVioleta = document.getElementsByClassName("arcAzulVioleta");
+clicarCor(arcAzulVioleta);
+
+// Arc Azul
+var arcAzul = document.getElementsByClassName("arcAzul");
+clicarCor(arcAzul);
+
+// Arc VerdeAzul
+var arcVerdeAzul = document.getElementsByClassName("arcVerdeAzul");
+clicarCor(arcVerdeAzul);
+
+// Arc Verde
+var arcVerde = document.getElementsByClassName("arcVerde");
+clicarCor(arcVerde);
+
+// Arc AmareloVerde
+var arcAmareloVerde = document.getElementsByClassName("arcAmareloVerde");
+clicarCor(arcAmareloVerde);
+
+
+
+
+
+/*// Arc Amarelo
 var arcAmarelo = document.getElementsByClassName("arcAmarelo");
 for (let i=0; i<arcAmarelo.length; i++) {
         arcAmarelo[i].addEventListener("click", function () {
@@ -111,7 +258,7 @@ for (let i=0; i<arcAmareloVerde.length; i++) {
         arcAmareloVerde[i].addEventListener("click", function () {
                 console.log("Click no arcAmareloVerde");
         });
-}
+}*/
 
 
 
