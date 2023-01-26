@@ -7,22 +7,6 @@ canvas {
 main > h2{
     margin-top: 0;
 }
-#barraPontuação{
-    padding: 0 20px 0 20px;
-    height: 8vh;
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-#barraPontuação > div:first-child{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-#barraPontuação > div:first-child > p{
-    margin: 0 0 0 25px;
-}
 
 #divCoresNivel1>svg{
     cursor: pointer;
