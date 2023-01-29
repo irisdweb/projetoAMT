@@ -27,7 +27,7 @@
 
     width: 320px;
     height: 180px;
-    background-color: transparent;
+    background-color: white;
 
     color: #000000;
     margin: 0 20px 0 20px;
@@ -41,4 +41,7 @@
 .boxNiveis > h3:last-child{
     margin: 10px 0 0 0;
     font-weight: 500;
+}
+.boxNiveis:hover{
+    border: 5px solid #000000;
 }

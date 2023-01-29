@@ -26,6 +26,14 @@ main > h2{
 #sectionConteudoPrincipal>svg{
  margin: 0 30px;
 }
+#divCorPedida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#divCorPedida > button{
+    margin-top: 20px;
+}
 #divCoresNivel3{
     display: flex;
     flex-direction: row;

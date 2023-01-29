@@ -3,6 +3,17 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/*IMAGEM DE FUNDO------------------------------*/
+#imagemFundo{
+    position: absolute;
+    z-index: -10000;
+    height: 120%;
+    top:-5%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /*BARRA DE NAVEGAÇÃO------------------------------*/
@@ -172,7 +183,7 @@ body {
 }
 
 #textoInstrucoes {
-    width: 50%;
+    width: 80%;
     height: auto;
 }
 
@@ -225,7 +236,7 @@ body {
 }
 
 #textoMensagem {
-    width: 50%;
+    width: 80%;
     height: auto;
 }
 

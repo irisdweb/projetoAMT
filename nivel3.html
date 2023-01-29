@@ -29,7 +29,6 @@
                 <button id="botaoSairJogo" class="botao">Sim</button>
                 <button id="botaoSairPopConfirmacaoSair" class="botao">Não</button>
             </section>
-
         </div>
     </section>
     <section id="popInstrucoesNivel1" class="popInstrucoesNivel1Off">
@@ -40,18 +39,34 @@
             </section>
             <section>
                 <h3 id="tituloInstrucoes"><b>Instruções</b></h3>
-                <p id="textoInstrucoes">POR ESCREVER</p>
+                <p id="textoInstrucoes">Seleciona, através do clique, uma cor de cada vez de modo a obter a cor pedida. Se conseguires alcançar a cor com o número mínimo de cores misturadas, ganhas 5 pontos. Se precisares de "Apagar" para remover as cores clicadas anteriormente, ganhas apenas 3 pontos.</p>
+            </section>
+        </div>
+    </section>
+    <section id="popMensagem" class="popMensagemOff">
+        <div id="divMensagem">
+            <section>
+                <img id="botaoSairMensagem" src="img/cruzFechar.png" height="120" width="120"
+                     alt="cruz para fechar o pop up das instruções">
+            </section>
+            <section>
+                <h3 id="tituloMensagem"></h3>
+                <p id="textoMensagem"></p>
             </section>
         </div>
     </section>
     <h2>Mistura as cores até chegares à pedida!</h2>
     <section id="sectionConteudoPrincipal">
         <!--CORES Pedida-->
+        <div id="divCorPedida">
+            <p>Cor Pedida</p>
         <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect id="quadradoCorPedida" width="122" height="122" rx="20" fill="rgb(0,0,0)"/>
         </svg>
+        <button id="botaoApagar" class="botao">Apagar</button>
+        </div>
         <!--Círculo-->
-        <svg width="335" height="335" viewBox="0 0 335 335" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="355" height="355" viewBox="0 0 335 335" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect id="circuloDaCor" width="335" height="335" rx="167.5" fill="rgb(135,135,135)"/>
         </svg>
         <div id="divCoresNivel3">
@@ -65,9 +80,9 @@
                     <rect id="quadradoBranco" width="122" height="122" rx="20" fill="rgb(255,255,255)" stroke-width="1"
                           stroke="rgb(0,0,0)"/>
                 </svg>
-                <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <!--   <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect id="quadradoCinza" width="122" height="122" rx="20" fill="rgb(135,135,135)"/>
-                </svg>
+                </svg>-->
             </div>
             <!--CORES PRIMÁRIAS-->
             <div id="divCoresPrimariasNivel3">
@@ -82,7 +97,7 @@
                     <rect id="quadradoAmarelo" width="122" height="122" rx="20" fill="rgb(242, 229, 76)"/>
                 </svg>
             </div>
-            <!--CORES SECUNDÁRIAS-->
+            <!--&lt;!&ndash;CORES SECUNDÁRIAS&ndash;&gt;
             <div id="divCoresSecundariasNivel3">
                 <p>Secundárias</p>
                 <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +110,7 @@
                     <rect id="quadradoLaranja" width="122" height="122" rx="20" fill="rgb(229, 149, 53)"/>
                 </svg>
             </div>
-            <!--CORES TERCIÁRIAS-->
+            &lt;!&ndash;CORES TERCIÁRIAS&ndash;&gt;
             <div id="divCoresTerciariasNivel3">
                 <p>Terciárias</p>
                 <section>
@@ -131,14 +146,21 @@
                         </svg>
                     </section>
                 </section>
-            </div>
+            </div>-->
         </div>
     </section>
 </main>
 <footer id="barraPontuação">
     <div>
-        <p>Pontuação Nível 1: 0 de 15 pontos</p>
+        <p id="pontuacaoNivel3">Pontuação Nível 3: 0 de 25 pontos</p>
         <p>Pontuação Final: 0 pontos</p>
+    </div>
+    <div id="circulosNiveis">
+        <span id="ponto1" class="ponto"></span>
+        <span id="ponto2" class="ponto"></span>
+        <span id="ponto3" class="ponto"></span>
+        <span id="ponto4" class="ponto"></span>
+        <span id="ponto5" class="ponto"></span>
     </div>
 </footer>
 <script src="js/nivel3_svg.js"></script>
