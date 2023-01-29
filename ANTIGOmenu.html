@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">
-    <title>Composição das Cores | Menu</title>
+    <title>Title</title>
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
-<!--IMAGEM DE FUNDO-->
+
 <svg id="imagemFundo" width="1460" height="982" viewBox="0 0 1460 982" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect x="71" y="-7" width="49" height="201" rx="15" fill="#DB6A35"/>
     <rect x="71" y="261" width="49" height="76" rx="15" fill="#F5C746"/>
@@ -43,23 +43,17 @@
     <rect x="49" y="1010" width="49" height="173" rx="15" transform="rotate(-180 49 1010)" fill="#96BA44"/>
     <rect x="49" y="796" width="49" height="76" rx="15" transform="rotate(-180 49 796)" fill="#E59535"/>
 </svg>
+
+
 <header id="barraNavegacao">
     <div></div>
     <div>
+        <button id="botaoInstrucoes" class="botao">Instruções</button>
         <img id="botaoSom" src="img/BotaoSomOn.png" height="130" width="159" alt="">
         <img id="botaoSair" src="img/BotaoSair.png" height="120" width="129" alt="">
     </div>
 </header>
 <main id="boxPrincipal">
-    <section id="popConfirmacaoSair" class="popConfirmacaoSairOff">
-        <div id="divConteudoConfirmacaoSair">
-            <p>Tem a certeza de que quer sair do jogo?</p>
-            <section>
-                <button id="botaoSairJogo" class="botao">Sim</button>
-                <button id="botaoSairPopConfirmacaoSair" class="botao">Não</button>
-            </section>
-        </div>
-    </section>
     <h2 id="subtituloMenu">Menu</h2>
     <div id="boxNivel1" class="boxNiveis">
         <h3>Nivel 1</h3>
@@ -86,6 +80,5 @@
         window.location = "nivel3.html";
     };
 </script>
-<script src="js/geral.js"></script>
 </body>
 </html>
